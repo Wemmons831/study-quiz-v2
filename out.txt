@@ -1,0 +1,255 @@
+#1 [internal] load local bake definitions
+#1 reading from stdin 1.05kB done
+#1 DONE 0.0s
+
+#2 [frontend internal] load build definition from Dockerfile
+#2 transferring dockerfile: 389B 0.0s done
+#2 DONE 0.0s
+
+#3 [backend internal] load build definition from Dockerfile
+#3 transferring dockerfile: 495B done
+#3 DONE 0.0s
+
+#4 [backend internal] load metadata for docker.io/library/node:18-alpine
+#4 DONE 0.4s
+
+#5 [backend internal] load .dockerignore
+#5 transferring context: 2B 0.0s done
+#5 DONE 0.0s
+
+#6 [frontend internal] load .dockerignore
+#6 transferring context: 2B 0.0s done
+#6 DONE 0.1s
+
+#7 [backend internal] load build context
+#7 DONE 0.0s
+
+#8 [frontend internal] load build context
+#8 ...
+
+#9 [backend 1/6] FROM docker.io/library/node:18-alpine@sha256:8d6421d663b4c28fd3ebc498332f249011d118945588d0a35cb9bc4b8ca09d9e
+#9 resolve docker.io/library/node:18-alpine@sha256:8d6421d663b4c28fd3ebc498332f249011d118945588d0a35cb9bc4b8ca09d9e 0.1s done
+#9 DONE 0.1s
+
+#8 [frontend internal] load build context
+#8 ...
+
+#7 [backend internal] load build context
+#7 transferring context: 760.81kB 0.9s done
+#7 DONE 0.9s
+
+#8 [frontend internal] load build context
+#8 ...
+
+#10 [backend 2/6] WORKDIR /app
+#10 CACHED
+
+#11 [backend 3/6] COPY package*.json ./
+#11 CACHED
+
+#12 [backend 4/6] RUN npm ci --only=production
+#12 CACHED
+
+#13 [backend 5/6] COPY . .
+#13 CACHED
+
+#14 [backend 6/6] RUN mkdir -p uploads/profiles
+#14 CACHED
+
+#8 [frontend internal] load build context
+#8 ...
+
+#15 [backend] exporting to image
+#15 exporting layers done
+#15 exporting manifest sha256:5913043bbf987cbeaf61e55f6fdd2acf43701c1dbdd58478d58306915c771c6b done
+#15 exporting config sha256:de977663d801fee344b4e998de2e4d1755156319703c5c2d67b6e372c3dbafdb done
+#15 exporting attestation manifest sha256:44e60309b3e0cf02fffde735d076d5259fbddd07e4e4019665715bafe0c25bda 0.0s done
+#15 exporting manifest list sha256:abdbcef611684147ca0db7aed7626bc2701c1c68415cbe102137ef096e074976 0.0s done
+#15 naming to docker.io/library/study-quiz-v2-backend:latest done
+#15 unpacking to docker.io/library/study-quiz-v2-backend:latest 0.0s done
+#15 DONE 0.2s
+
+#8 [frontend internal] load build context
+#8 ...
+
+#16 [backend] resolving provenance for metadata file
+#16 DONE 0.0s
+
+#8 [frontend internal] load build context
+#8 transferring context: 67.22MB 6.1s
+#8 transferring context: 72.09MB 6.4s done
+#8 DONE 6.5s
+
+#10 [frontend 2/6] WORKDIR /app
+#10 CACHED
+
+#17 [frontend 3/5] COPY package*.json ./
+#17 DONE 0.4s
+
+#18 [frontend 4/5] RUN npm ci
+#18 8.293 npm warn deprecated w3c-hr-time@1.0.2: Use your platform's native performance.now() and performance.timeOrigin.
+#18 9.178 npm warn deprecated stable@0.1.8: Modern JS already guarantees Array#sort() is a stable sort, so this library is deprecated. See the compatibility table on MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#browser_compatibility
+#18 9.235 npm warn deprecated sourcemap-codec@1.4.8: Please use @jridgewell/sourcemap-codec instead
+#18 9.487 npm warn deprecated rollup-plugin-terser@7.0.2: This package has been deprecated and is no longer maintained. Please use @rollup/plugin-terser
+#18 9.488 npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+#18 9.696 npm warn deprecated workbox-cacheable-response@6.6.0: workbox-background-sync@6.6.0
+#18 9.893 npm warn deprecated q@1.5.1: You or someone you depend on is using Q, the JavaScript Promise library that gave JavaScript developers strong feelings about promises. They can almost certainly migrate to the native JavaScript promise now. Thank you literally everyone for joining me in this bet against the odds. Be excellent to each other.
+#18 9.893 npm warn deprecated
+#18 9.893 npm warn deprecated (For a CapTP with native promises, see @endo/eventual-send and @endo/captp)
+#18 10.04 npm warn deprecated workbox-google-analytics@6.6.0: It is not compatible with newer versions of GA starting with v4, as long as you are using GAv3 it should be ok, but the package is not longer being maintained
+#18 11.91 npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+#18 12.34 npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+#18 13.01 npm warn deprecated domexception@2.0.1: Use your platform's native DOMException instead
+#18 14.59 npm warn deprecated abab@2.0.6: Use your platform's native atob() and btoa() methods instead
+#18 14.74 npm warn deprecated svgo@1.3.2: This SVGO version is no longer supported. Upgrade to v2.x.x.
+#18 15.71 npm warn deprecated @humanwhocodes/config-array@0.13.0: Use @eslint/config-array instead
+#18 15.71 npm warn deprecated @humanwhocodes/object-schema@2.0.3: Use @eslint/object-schema instead
+#18 16.71 npm warn deprecated @babel/plugin-proposal-optional-chaining@7.21.0: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-optional-chaining instead.
+#18 16.76 npm warn deprecated @babel/plugin-proposal-private-methods@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-private-methods instead.
+#18 16.76 npm warn deprecated @babel/plugin-proposal-nullish-coalescing-operator@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-nullish-coalescing-operator instead.
+#18 16.82 npm warn deprecated @babel/plugin-proposal-class-properties@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-class-properties instead.
+#18 16.82 npm warn deprecated @babel/plugin-proposal-numeric-separator@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-numeric-separator instead.
+#18 18.56 npm warn deprecated source-map@0.8.0-beta.0: The work that was done in this beta branch won't be included in future versions
+#18 19.77 npm warn deprecated @babel/plugin-proposal-private-property-in-object@7.21.11: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-private-property-in-object instead.
+#18 23.55 npm warn deprecated eslint@8.57.1: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+#18 28.01 
+#18 28.01 added 1551 packages, and audited 1552 packages in 27s
+#18 28.01 
+#18 28.01 276 packages are looking for funding
+#18 28.01   run `npm fund` for details
+#18 28.02 
+#18 28.02 9 vulnerabilities (3 moderate, 6 high)
+#18 28.02 
+#18 28.02 To address all issues (including breaking changes), run:
+#18 28.02   npm audit fix --force
+#18 28.02 
+#18 28.02 Run `npm audit` for details.
+#18 28.03 npm notice
+#18 28.03 npm notice New major version of npm available! 10.8.2 -> 11.6.0
+#18 28.03 npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.6.0
+#18 28.03 npm notice To update run: npm install -g npm@11.6.0
+#18 28.03 npm notice
+#18 DONE 28.9s
+
+#19 [frontend 5/5] COPY . .
+#19 DONE 27.8s
+
+#20 [frontend] exporting to image
+#20 exporting layers
+#20 exporting layers 15.8s done
+#20 exporting manifest sha256:323e32b9a10212428c37a1eea2aa0915dec5dbb4edf8eac7d8a9f1c701602ed4 0.0s done
+#20 exporting config sha256:dea1b35f0eb198bc768491611647efd1603775ec092dc94ed241e14546e8e474 0.0s done
+#20 exporting attestation manifest sha256:8502b897b5caa873a1620947339ee56b8b37717b839ec056155c16eb52a96a63 0.0s done
+#20 exporting manifest list sha256:3608ee625b85b219299a3758f79f0cde20aaa409e845415b4f4a6808c001625b
+#20 exporting manifest list sha256:3608ee625b85b219299a3758f79f0cde20aaa409e845415b4f4a6808c001625b 0.0s done
+#20 naming to docker.io/library/study-quiz-v2-frontend:latest done
+#20 unpacking to docker.io/library/study-quiz-v2-frontend:latest
+#20 unpacking to docker.io/library/study-quiz-v2-frontend:latest 18.9s done
+#20 DONE 34.9s
+
+#21 [frontend] resolving provenance for metadata file
+#21 DONE 0.0s
+Attaching to backend-1, frontend-1, postgres-1
+postgres-1  | The files belonging to this database system will be owned by user "postgres".
+postgres-1  | This user must also own the server process.
+postgres-1  | 
+postgres-1  | The database cluster will be initialized with locale "en_US.utf8".
+postgres-1  | The default database encoding has accordingly been set to "UTF8".
+postgres-1  | The default text search configuration will be set to "english".
+postgres-1  | 
+postgres-1  | Data page checksums are disabled.
+postgres-1  | 
+postgres-1  | fixing permissions on existing directory /var/lib/postgresql/data ... ok
+postgres-1  | creating subdirectories ... ok
+postgres-1  | selecting dynamic shared memory implementation ... posix
+frontend-1  | 
+frontend-1  | > studyquiz-frontend@1.0.0 start
+frontend-1  | > react-scripts start
+frontend-1  | 
+postgres-1  | selecting default max_connections ... 100
+postgres-1  | selecting default shared_buffers ... 128MB
+postgres-1  | selecting default time zone ... Etc/UTC
+postgres-1  | creating configuration files ... ok
+postgres-1  | running bootstrap script ... ok
+postgres-1  | performing post-bootstrap initialization ... ok
+postgres-1  | syncing data to disk ... ok
+postgres-1  | 
+postgres-1  | 
+postgres-1  | Success. You can now start the database server using:
+postgres-1  | 
+postgres-1  |     pg_ctl -D /var/lib/postgresql/data -l logfile start
+postgres-1  | 
+postgres-1  | waiting for server to start....2025-09-03 21:12:32.959 UTC [48] LOG:  starting PostgreSQL 15.14 (Debian 15.14-1.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+postgres-1  | 2025-09-03 21:12:32.964 UTC [48] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+postgres-1  | 2025-09-03 21:12:32.980 UTC [51] LOG:  database system was shut down at 2025-09-03 21:12:32 UTC
+postgres-1  | 2025-09-03 21:12:32.999 UTC [48] LOG:  database system is ready to accept connections
+postgres-1  |  done
+postgres-1  | server started
+frontend-1  | Could not find a required file.
+frontend-1  |   Name: index.js
+frontend-1  |   Searched in: /app/src
+postgres-1  | CREATE DATABASE
+postgres-1  | 
+postgres-1  | 
+postgres-1  | /usr/local/bin/docker-entrypoint.sh: running /docker-entrypoint-initdb.d/001_initial_schema.sql
+postgres-1  | CREATE EXTENSION
+postgres-1  | CREATE TABLE
+postgres-1  | CREATE TABLE
+postgres-1  | CREATE TABLE
+postgres-1  | CREATE TABLE
+postgres-1  | CREATE TABLE
+postgres-1  | CREATE TABLE
+postgres-1  | CREATE INDEX
+postgres-1  | CREATE INDEX
+postgres-1  | CREATE INDEX
+postgres-1  | CREATE INDEX
+postgres-1  | CREATE INDEX
+postgres-1  | CREATE INDEX
+postgres-1  | CREATE INDEX
+postgres-1  | CREATE INDEX
+postgres-1  | CREATE INDEX
+postgres-1  | CREATE INDEX
+postgres-1  | CREATE INDEX
+postgres-1  | CREATE INDEX
+postgres-1  | CREATE INDEX
+postgres-1  | CREATE INDEX
+postgres-1  | CREATE FUNCTION
+postgres-1  | CREATE TRIGGER
+postgres-1  | CREATE TRIGGER
+postgres-1  | CREATE TRIGGER
+postgres-1  | CREATE TRIGGER
+postgres-1  | CREATE TRIGGER
+postgres-1  | CREATE TRIGGER
+postgres-1  | 
+postgres-1  | 
+postgres-1  | waiting for server to shut down....2025-09-03 21:12:33.476 UTC [48] LOG:  received fast shutdown request
+postgres-1  | 2025-09-03 21:12:33.479 UTC [48] LOG:  aborting any active transactions
+postgres-1  | 2025-09-03 21:12:33.481 UTC [48] LOG:  background worker "logical replication launcher" (PID 54) exited with exit code 1
+postgres-1  | 2025-09-03 21:12:33.482 UTC [49] LOG:  shutting down
+postgres-1  | 2025-09-03 21:12:33.485 UTC [49] LOG:  checkpoint starting: shutdown immediate
+postgres-1  | 2025-09-03 21:12:33.667 UTC [49] LOG:  checkpoint complete: wrote 938 buffers (5.7%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.024 s, sync=0.149 s, total=0.186 s; sync files=337, longest=0.004 s, average=0.001 s; distance=4443 kB, estimate=4443 kB
+postgres-1  | 2025-09-03 21:12:33.675 UTC [48] LOG:  database system is shut down
+postgres-1  |  done
+postgres-1  | server stopped
+postgres-1  | 
+postgres-1  | PostgreSQL init process complete; ready for start up.
+postgres-1  | 
+[Kfrontend-1 exited with code 1
+backend-1   | 
+backend-1   | > studyquiz-backend@1.0.0 dev
+backend-1   | > nodemon server.js
+backend-1   | 
+backend-1   | [33m[nodemon] 3.1.10[39m
+backend-1   | [33m[nodemon] to restart at any time, enter `rs`[39m
+backend-1   | [33m[nodemon] watching path(s): *.*[39m
+backend-1   | [33m[nodemon] watching extensions: js,mjs,cjs,json[39m
+backend-1   | [32m[nodemon] starting `node server.js`[39m
+backend-1   | [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+Gracefully Stopping... press Ctrl+C again to force
+[K Container study-quiz-v2-frontend-1  [32mStopping[0m
+[K Container study-quiz-v2-backend-1  [32mStopping[0m
+[K Container study-quiz-v2-frontend-1  [32mStopped[0m
+[K Container study-quiz-v2-backend-1  [32mStopped[0m
+[K Container study-quiz-v2-postgres-1  [32mStopping[0m
+[Kbackend-1 exited with code 143
+[K Container study-quiz-v2-postgres-1  [32mStopped[0m
